@@ -1,0 +1,13 @@
+[project]
+name = "llm-huggingface"
+version = "0.0.1"
+description = "LLM plugin providing access to the huggingface inference API"
+readme = "README.md"
+authors = [{ name = "Andres EM" }]
+license = { text = "Apache-2.0" }
+classifiers = ["License :: OSI Approved :: Apache Software License"]
+dependencies = ["click", "llm", "requests"]
+requires-python = ">=3.8"
+
+[project.entry-points.llm]
+huggingface = "llm_huggingface"
